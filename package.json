@@ -1,0 +1,17 @@
+{
+  "name": "gdpr-game-account-deletion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/account_delete_service.ts",
+    "test": "node --experimental-strip-types src/account_delete_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}

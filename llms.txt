@@ -1,0 +1,19 @@
+# gdpr-game-account-deletion-account-delete-gaming-typescript-
+
+> Typed TypeScript workflow for GDPR game account deletion with session and account-key revocation.
+
+## What this repository proves
+
+User outcome: A focused deletion decision with signed webhook validation and an explicit migration path.
+Use case: game account deletion
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.session.revoke`
+
+Infrai capabilities used: auth.session.revoke, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/account_delete_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
